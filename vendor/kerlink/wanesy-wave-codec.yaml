@@ -1,0 +1,13 @@
+# Uplink decoder decodes binary data uplink into a JSON object (optional)
+# For documentation on writing encoders and decoders, see: https://thethingsstack.io/integrations/payload-formatters/javascript/
+uplinkDecoder:
+  fileName: wanesy-wave.js
+  # Examples (optional)
+  examples:
+    - description: Pass through
+      input:
+        fPort: 80
+        bytes: [0x84, 0x03, 0x00, 0x00, 0x4E, 0x02, 0x00, 0x00, 0x01, 0x00, 0x02, 0x00, 0x05, 0x00, 0x11, 0x00, 0x22, 0x00, 0x54, 0x00, 0x23, 0x00, 0x04, 0x01, 0x70, 0x00, 0x28, 0x00, 0x62, 0x00, 0x43, 0x00 ]
+      output:
+        data:
+          payload: '840300004E020000010002000500110022005400230004017000280062004300'

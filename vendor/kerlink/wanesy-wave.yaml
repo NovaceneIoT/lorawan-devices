@@ -1,0 +1,49 @@
+name: Wanesy Wave is a Wi-Fi/BLE anchor dedicated to asset tracking
+description: It integrates both Wi-Fi and BLE (for Bluetooth Low Energy) tracking technologies and LoRaWAN backhauling to create highly reliable and secured smart indoor tracking, smart retail and smart asset management solutions.
+
+# Firmware versions (at least one is mandatory)
+firmwareVersions:
+  - # Firmware version
+    version: '1.0'
+    numeric: 1
+
+    # LoRaWAN Device Profiles per region
+    # Supported regions are EU863-870, US902-928, AU915-928, AS923, CN779-787, EU433, CN470-510, KR920-923, IN865-867,
+    # RU864-870
+    profiles:
+      EU863-870:
+        id: kerlink-eu868-profile
+        lorawanCertified: true
+        codec: wanesy-wave-codec
+      US902-928:
+        id: kerlink-us902-profile
+        lorawanCertified: true
+        codec: wanesy-wave-codec
+      AS923:
+        id: kerlink-as923-profile
+        lorawanCertified: true
+        codec: wanesy-wave-codec
+      AU915-928:
+        id: kerlink-au915-profile
+        lorawanCertified: true
+        codec: wanesy-wave-codec
+
+# Dimensions in mm (optional)
+# Use width, height, length and/or diameter
+dimensions:
+  width: 75
+  length: 100
+  height: 22
+
+# Weight in grams (optional)
+weight: 200
+
+# Operating conditions (optional)
+operatingConditions:
+  # Temperature (Celcius)
+  temperature:
+    min: -20
+    max: 55
+
+# Product and data sheet URLs (optional)
+productURL: https://www.kerlink.com/product/wanesy-wave/
